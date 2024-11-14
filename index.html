@@ -234,15 +234,18 @@
             <div class="input-group-2">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
+                 
             </div>
             
-            <script>
-    function sendEmail() {
-        const message = document.getElementById('message').value;
-        const email = "Phillipnozil@gmail.com"; 
-        const subject = "New Message from Contact Form";
-    
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+<script>
+function sendEmail() {
+    const message = document.getElementById('message').value;
+    const email = "phillipnozil@gmail.com"; 
+    const subject = "New Message from Contact Form";
+
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink;
 }
 </script>
         </form>
