@@ -214,29 +214,7 @@
             </div>
         </div>
     </section>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Form</title>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script>
-            
-            emailjs.init('1KtD0PSx4J6n14q4g'); 
-    
-            function sendEmail(event) {
-                event.preventDefault(); 
-    
-                emailjs.sendForm('service_v5jxn0l', 'template_a46hk4b', event.target)
-                    .then(() => {
-                        alert('Message sent successfully!');
-                        event.target.reset(); 
-                    })
-                    .catch((error) => {
-                        alert('Failed to send message. Please try again later.');
-                    });
-            }
-        </script>
-    </head>
+  
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
