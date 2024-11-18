@@ -228,9 +228,6 @@ span {
   100% {
     content: "Tech Director";
   }
-  101%
-  120% {
-    content: "AVL Specialist";
 }
 @keyframes typing {
   10%,
